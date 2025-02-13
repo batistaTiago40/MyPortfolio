@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/35857cd622.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="src/icons8-portfólio-50.png" type="image/x-icon">
+    <title>Tiago Batista - Portfolio</title>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-content">
+            <h1 class="header-title">Tiago Batista</h1>
+            <h3 class="header-function">Frontend web developer</h3>
+            <p class="header-text">Recent graduate in Systems Analysis and Development with knowledge in programming languages, databases, and web development. Skilled in problem-solving and quick learning. I am seeking opportunities to apply my knowledge in a growing technology company.
+            </p>
+            <div class="header-buttons">
+                <button id="contact-scroll" onclick="location.href='#contact-section'">CONTACT ME</button>
+                <div class="no-border"><a href="https://github.com/batistaTiago40" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                <div class="no-border"><a href="https://www.linkedin.com/in/batistatiago40" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+            </div>
+        </div>
+        <div class="header-image">
+            <img src="src/myphoto.png" alt="Picture of Me">
+        </div>
+    </div>
+    <div class="especializations-container">
+        <div class="especializations-content">
+            <i class="fa-brands fa-html5 fa-2xl"></i>
+            <i class="fa-brands fa-css3-alt fa-2xl"></i>
+            <i class="fa-brands fa-js fa-2xl"></i>
+            <i class="fa-brands fa-react fa-2xl"></i>
+            <i class="fa-brands fa-bootstrap fa-2xl"></i>
+            <i class="fa-brands fa-git-alt fa-2xl"></i>
+        </div>
+    </div>
+    <div class="projects-container">
+        <div class="projects-content">
+            <h2 class="projects-title">LAST <spam>PROJECTS</spam></h2>
+
+            <div class="project">
+                <div class="project-img">
+                    <img src="src/pokedex-project.png" alt="Pokedex Project">
+                </div>
+                <div class="project-text">
+                    <h3>Pokedex</h3>
+                    <p>Pokedex project, using API requests, GIFs and a search bar function. I did this project in order to learn how to use APIs, and how to work with different image and GIFs sizes.</p>
+                    <div class="project-buttons">
+                        <div class="demo-button"><a href="https://batistatiago40.github.io/geradorSenhas/" target="_blank">DEMO</a></div>
+                        <div class="code-button"><a href="https://github.com/batistaTiago40/geradorSenhas" target="_blank"><i class="fa-brands fa-github"></i> CODE</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-text">
+                    <h3>Password Generator</h3>
+                    <p>A very simple password generator made with JavaScript. I did this project in order to remember basic concepts of the language that I hadn't used in a while and improve my logic.</p>
+                    <div class="project-buttons">
+                        <div class="demo-button"><a href="https://batistatiago40.github.io/Pokedex/" target="_blank">DEMO</a></div>
+                        <div class="code-button"><a href="https://github.com/batistaTiago40/Pokedex" target="_blank"><i class="fa-brands fa-github"></i>CODE</a></div>
+                    </div>
+                </div>
+                <div class="project-img">
+                    <img src="src/password-project.jpg" alt="Password Project">
+                </div>
+            </div>
+            <div class="project" id="last">
+                <div class="project-img">
+                    <img src="src/pingpong-project.png" alt="Ping Pong Project">
+                </div>
+                <div class="project-text">
+                    <h3>Ping-Pong Game</h3>
+                    <p>I created this game following the classes of the DevSamurai course. Basic Ping-Pong game using HTML Canva, including: Scoreboard, speed of the ball being changed according to the score and one of the rackets being controlled by the computer. After following the steps in the course and creating the base game, I added the game's difficulty, when the player scores a point, the computer's speed increases, making it difficult for the player to score more points, but when the computer scores a point, his racket slows down, making it easier for the player to score points.</p>
+                    <div class="project-buttons">
+                            <div class="demo-button"><a href="https://batistatiago40.github.io/Ping-Pong/" target="_blank">DEMO</a></div>
+                            <div class="code-button"><a href="https://github.com/batistaTiago40/Ping-Pong" target="_blank"><i class="fa-brands fa-github"></i>CODE</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container" id="contact-section">
+        <div class="contact-content">
+            <h2 class="contact-title">CONTACT <spam>ME</spam></h2>
+            <div class="contact-label">
+                <div class="contact-buttons">
+                    <div class="contact-button"><a href="https://www.instagram.com/tiago.batista44" target="_blank"><i class="fa-brands fa-instagram"></i> @tiago.batista44</a></div>
+                    <div class="contact-button"><a href="mailto:tiagosbatista40@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> tiagosbatista40@gmail.com</a></div>
+                    <div class="contact-button"><a href="https://www.linkedin.com/in/batistatiago40" target="_blank"><i class="fa-brands fa-linkedin"></i> batistatiago40</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('contact-scroll').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('contact-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

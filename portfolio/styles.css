@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-container {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(src/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.header-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(46, 44, 3, 0.548);
+    z-index: 1;
+}
+
+.header-content {
+    width: 70%;
+    margin: 7rem;
+    color: white;
+    z-index: 2;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    font-size: 4rem;
+    font-weight: 800;
+}    
+
+.header-function {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header-text {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.header-buttons {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons button {
+    border: 2px solid white;
+    box-shadow: none;
+    border-radius: 5%;
+    padding: 0.8rem;
+    background-color: transparent;
+    margin-right: 1rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.header-buttons .no-border {
+    border: none;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.header-image {
+    width: 30%;
+    margin-top: -5rem;
+}
+
+.header-image img{
+    width: 100%;
+    margin-bottom: -0.45rem;
+    filter: grayscale(100%);
+}
+
+.especializations-container {
+    background-color: rgb(38, 37, 44);
+    width: 70%;
+    align-self: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 3;
+    margin-top: -5rem;
+    padding: 5rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.753);
+}
+
+.especializations-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: gray;
+    font-size: 2.5rem;
+}
+
+.projects-container {
+    background-color: rgb(38, 37, 44);
+    width: 100%;
+    margin-top: -6rem;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    color: white;
+}
+
+.projects-title {
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0 10rem 0;
+    font-weight: 800;
+}
+
+.projects-title spam {
+    text-decoration: underline;
+    text-decoration-color: rgb(68, 68, 6);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.project-img img{
+    width: 35rem;
+    margin-right: 1rem;
+}
+
+.project-text h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.project-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.project-buttons {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.project-buttons > a:visited {
+    text-decoration: none;
+}
+
+.demo-button {
+    border: 1px solid rgb(68, 68, 6);
+    background-color: rgb(68, 68, 6);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.code-button {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.project #last {
+    margin-bottom: 0;
+}
+
+.project #last .project-img {
+    margin-right: 3rem;
+}
+
+.contact-container {
+    background-color: rgb(14, 14, 3);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content {
+    width: 40%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact-title {
+    color: white;
+    font-size: 2rem;
+}
+
+.contact-title spam {
+    text-decoration: underline;
+    text-decoration-color: rgb(68, 68, 6);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}
+
+.contact-label {
+    margin-top: 2rem;
+    border: 2px solid rgb(68, 68, 6);;
+    text-align: justify;
+    font-size: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.contact-button{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
